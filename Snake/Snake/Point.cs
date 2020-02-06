@@ -15,7 +15,6 @@ namespace Snake
 
         public Point()
         {
-            
         }
         public Point(int _x, int _y, char _sym)
         {
@@ -42,11 +41,11 @@ namespace Snake
             }
             else if (direction == Direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }
             else if (direction == Direction.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
 
@@ -67,7 +66,5 @@ namespace Snake
             return x + "," + y + "," + sym;
         }
 
-
     }
-
 }
